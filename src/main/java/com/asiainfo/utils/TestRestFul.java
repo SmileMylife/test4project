@@ -76,13 +76,15 @@ public class TestRestFul {
 //			//服务请求量预警Task测试  20180419155715X635815955
 //			String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/baser/task/smsBatchWrkfmTime";
 //			String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/baser/task/yn/autoToMidsSendTask_YN";
-            String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/baser/task/autoToNsosSend";
+//            String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/baser/task/autoToNsosSend";
 //			String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/basesr/task/autoDispachEOMSTask";
 
 
 
-            String input = "{\"params\":{\"tenantId\":\"100000\",\"provCode\":\"00030016\",\"sysCode\":\"NSOS\"}}";
-            //督办部门超时工单查询接口测试
+//            String input = "{\"params\":{\"tenantId\":\"100000\",\"provCode\":\"00030016\",\"sysCode\":\"NSOS\"}}";
+            String input = "{\"params\":{\"tenantId\":\"100000\",\"provCode\":\"00030016\",\"wrkfmShowSwftno\":\"20180531091117X778057640\", \"staffId\":\"YN0001\", \"accountAdjustmentContent\":\"签批意见\", \"isNeedApprove\":\"0\", \"approveStatus\":\"1\"}}";
+            String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/outter/accountAdjustment";
+            //督办部门超时工单查询接口测试、
 //			String serverUri = "http://127.0.0.1:28076/ngwfcontrol/ws/outter/queryOverTimeProblemProcess";
 //			String input = "{\"params\":{\"provCode\":\"00030016\",\"opStaffId\":\"YN0001\",\"operationType\":\"04\"," +
 //					"\"parameter\":\"{\\\"provCode\\\":\\\"00030016\\\",\\\"tenantId\\\":\\\"100000\\\",\\\"overseeDeptId\\\":\\\"00030009,0003001600010001,-6,000300160001,000300500001,000300160002\\\"," +

@@ -22,6 +22,13 @@ public class RestTestUtil {
         String url = "http://localhost:28076/";
 
 
+        //老系统向新系统回复
+        //老向新回复
+        String serverUri = url + "ngwfcontrol/ws/nsos/oldSysToNewSysRly";
+        String input = "{\"params\":{\"rtlId\":\"20180712161757X477174121\",\"handleStaffId\":\"YN0001\", \"comment\":\"测试回复\", \"attachRef\":\"\", "
+                + "\"provCode\":\"00030016\", \"tenantId\":\"100000\"}}";
+
+
 
         //String serverUri = url + "ngwfcontrol/ws/interaction/eoms/reply";
     	
@@ -56,11 +63,10 @@ public class RestTestUtil {
 //    	String headXml = HttpServletUtils.getContent("一级客服向省下派.xml");
 //    	input = XmlToJsonUtils.xml2json(headXml);
 
-        //测试直接答复
-//    	String serverUri = url + "ngwfcontrol/ws/outter/directReplyServiceRequest";
-//    	String input = "{\"params\":{\"acceptDeptId\":\"0\", \"provCode\":\"00030016\", \"callPhone\":\"\", "
-//    			+ "\"calledPhone\":\"\",\"serviceRequestType\":\"007002004005002006\",\"acceptStaffId\":\"YN0001\",\"fullName\":\"客户投诉→基础服务类→基础业务→跨区服务→基础业务问题→业务规则问题\",\"bizCntt\":\"扣费提醒退订\","
-//    			+ "\"callNo\":\"\",\"serviceNum\":\"13920615937\",\"tenantId\":\"100000\"}}";
+        /*//测试直接答复
+        String serverUri = url + "ngwfcontrol/ws/outter/comOutSysToSrRly";
+        String input = "{\"params\":{\"rltWrkfmId\":\"20180614221243X563740347\",\"opTypeCd\":\"363\", \"sysCode\":\"CSCDS\", \"opDesc\":\"操作意见：测试重派OA投诉处理系统 我要回复111\", "
+                + "\"provCode\":\"00030016\", \"tenantId\":\"100000\"}}";*/
     	
     	/*//测试批量获取集团全网客户服务统一编码进程
     	String serverUri = url + "ngwfcontrol/ws/basesr/task/common/batchGetGroupUnifyCodeTask";
@@ -361,9 +367,9 @@ public class RestTestUtil {
 //		 String serverUri = url + "ngwfcontrol/ws/outter/qrySrWorkitemInfo";
 //		 String input = "{\"params\":{\"tenantId\":\"100000\",\"provCode\":\"00030016\",\"wrkfmId\":\"1000044246\"" +
 //				 ",\"acceptMonth\":\"2018-03-01\"}}";
-        //自动归档综调
-//		 String serverUri = url + "ngwfcontrol/ws/basesr/task/common/autoCSVCArchiveTaskCommon";
-        // String input = "{\"params\":{\"tenantId\":\"100000\",\"provCode\":\"00030016\"}}";
+//        自动归档综调
+		 /*String serverUri = url + "ngwfcontrol/ws/basesr/task/common/autoCSVCArchiveTaskCommon";
+         String input = "{\"params\":{\"tenantId\":\"100000\",\"provCode\":\"00030016\"}}";*/
 
         //测试自动派单
 //		 String serverUri = url + "ngwfcontrol/ws/basesr/task/common/autoToCSSLSendTaskCommon";
@@ -385,9 +391,9 @@ public class RestTestUtil {
 //				 ", \"responsibleRsnDesc\":\"2\", \"genrtWrkfmFlag\":\"0\", \"prevNodeEvaluation\":\"500\"}}";
 
         //测试通用外系统回复(综调)
-        String serverUri = url + "ngwfcontrol/ws/outter/comOutSysToSrRly";
-        String input = "{\"params\":{\"rltWrkfmId\":\"20180515091046X646047489\",\"opTypeCd\":\"919\", \"sysCode\":\"WARNSYS\", \"opDesc\":\"操作意见：测试重派PBOSS我要回复111\", "
-                + "\"provCode\":\"00030016\", \"tenantId\":\"100000\"}}";
+        /*String serverUri = url + "ngwfcontrol/ws/outter/comOutSysToSrRly";
+        String input = "{\"params\":{\"rltWrkfmId\":\"20180619100705X257842020\",\"opTypeCd\":\"363\", \"sysCode\":\"ECSS\", \"opDesc\":\"操作意见：测试重派PBOSS我要回复111\", "
+                + "\"provCode\":\"00030016\", \"tenantId\":\"100000\"}}";*/
 
 		 /*//测试外系统归档task
          String serverUri = url + "ngwfcontrol/ws/baser/task/common/autoOutSysArchive";
